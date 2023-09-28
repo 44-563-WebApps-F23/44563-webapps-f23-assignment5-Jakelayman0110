@@ -46,7 +46,7 @@
         background-color: #f2f2f2;
         font-weight: bold;
       }
-    </style>
+  </style>
 </head>
 <body>
   <h1>Visit cities with Jacob</h1>
@@ -141,30 +141,32 @@
   </table>
   <br>
   <hr>
-  <nav class="navbar navbar-dark bg-primary">
-    <div class="container">
-        <span class="navbar-brand">My Navigation Bar</span>
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group me-2" role="group" aria-label="First group">
+      <button type="button" class="btn btn-success">L</button>
+      <button type="button" class="btn btn-success">A</button>
+      <button type="button" class="btn btn-success">Y</button>
     </div>
-  </nav>
-    <div class="container mt-4">
-      <div class="btn-toolbar" role="toolbar" aria-label="Button Groups">
-        <!-- Button Group 1 - Success Coloring -->
-          <div class="btn-group mr-2" role="group" aria-label="Group 1">
-              <button type="button" class="btn btn-success">L</button>
-              <button type="button" class="btn btn-success">A</button>
-              <button type="button" class="btn btn-success">Y</button>
-         </div>
-        
-        <!-- Button Group 2 - Alert Coloring -->
-         <div class="btn-group mr-2" role="group" aria-label="Group 2">
-              <button type="button" class="btn btn-warning">M</button>
-             <button type="button" class="btn btn-warning">A</button>
-         </div>
-        
-         <!-- Button Group 3 - Danger Coloring -->
-         <div class="btn-group" role="group" aria-label="Group 3">
-              <button type="button" class="btn btn-danger">N</button>
-          </div>
-      </div>
+    <div class="btn-group me-2" role="group" aria-label="Second group">
+      <button type="button" class="btn btn-alert">M</button>
+      <button type="button" class="btn btn-alert">A</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group">
+      <button type="button" class="btn btn-danger">N</button>
+    </div>
   </div>
+  <br>
+  <hr>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+      <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+    </ul>
+  </div>
+  <br>
+  <hr>
+
 </html>
