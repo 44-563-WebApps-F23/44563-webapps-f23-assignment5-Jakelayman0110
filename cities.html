@@ -11,6 +11,42 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <style>
+    /* Add styles to the table */
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        margin-bottom: 20px;
+      }
+    
+      .table th, .table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+    
+      /* Style the table header */
+      .table th {
+        background-color: #f2f2f2;
+      }
+    
+      /* Style alternating rows */
+      .table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    
+      /* Add some spacing between cells */
+      .table th, .table td {
+        padding: 12px 15px;
+      }
+    
+      /* Style the header cells */
+      .table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+    </style>
 </head>
 <body>
   <h1>Visit cities with Jacob</h1>
@@ -37,6 +73,71 @@
   for medium screens. This means it will break beofre the col-sm-2 class which is optimized for<br>
   small screens.
   </p>
-
+  <div id = "photos">
+    <img src="losangeles.jpeg" class="img-fluid" alt="losangeles" width="400" height="300">
+    <img src="Anchorage.jpeg" class="img-fluid" alt="Anchorage" width="400" height="300">
+    <img src="yonkers.jpeg" class="img-fluid" alt="yonkers" width="400" height="300">
+  </div>
+  <br>
+  <div id = "thumbs">
+    <a href="losangeles.jpeg"  target="_blank"><img src="losangeles.jpeg" width="200" height="100"><a>
+    <a href="Anchorage.jpeg"  target="_blank"><img src="Anchorage.jpeg" width="200" height="100"><a>
+    <a href="yonkers.jpeg"  target="_blank"><img src="yonkers.jpeg" width="200" height="100"><a>
+  </div>
+  <br>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Letter</th>
+        <th scope="col">City</th>
+        <th scope="col">River</th>
+        <th scope="col">Trees</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>L</td>
+        <td>Los Angeles</td>
+        <td>La Crosse River</td>
+        <td>Loquat Tree</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>A</td>
+        <td>Anahiem</td>
+        <td>Aberjona River</td>
+        <td>Apple Tree</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Y</td>
+        <td>Yonkers</td>
+        <td>Yadkin River</td>
+        <td>Yew Tree</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>M</td>
+        <td>Minneapolis</td>
+        <td>Mississippi River</td>
+        <td>Maple Tree</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>A</td>
+        <td>Anchorage</td>
+        <td>Arkansas River</td>
+        <td>Acacia</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>N</td>
+        <td>New York</td>
+        <td>Nile River</td>
+        <td>Nutmeg Tree</td>
+    </tbody>
+  </table>
 </body>
 </html>
